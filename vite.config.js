@@ -6,12 +6,12 @@ export default defineConfig({
   plugins: [react()],
   server: {
     port: 3000,
-    proxy: {
-      "/api": {
-        target: "https://threads-backend-1-bpzb.onrender.com",
-        changeOrigin: true,
-        secure: false,
-      },
-    },
+    // proxy: {
+    //   "/api": {
+    //     target: "https://threads-backend-1-bpzb.onrender.com",
+    //     changeOrigin: true,
+    //     secure: false,
+    //   },
+    // },
   },
 });

@@ -14,7 +14,9 @@ const HomePage = () => {
     const getFeedPosts = async () => {
       setPosts([]);
       try {
-        const res = await fetch("/api/posts/feed");
+        const res = await fetch(
+          "https://threads-backend-1-bpzb.onrender.com/api/posts/feed"
+        );
         const data = await res.json();
         if (data.error) {
           showToast("Error", data.error, "error");
